@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name = 'OAuthSwift-Alamofire'
-  s.version = '0.0.2'
+  s.version = '0.0.2-cocore'
   s.license = 'MIT'
   s.summary = 'OAuthSwift and Alamofire'
 
@@ -18,12 +18,12 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source = { :git => 'https://github.com/OAuthSwift/OAuthSwift-Alamofire.git', :tag => s.version }
+  s.source = { :git => 'https://github.com/dmitryshashlov/OAuthSwiftAlamofire', :tag => s.version }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source_files = 'OAuthSwift-Alamofire/*.swift'
 
-  s.dependency 'OAuthSwift'
-  s.dependency 'Alamofire'
+  s.dependency 'OAuthSwift', '0.6.0'
+  s.dependency 'Alamofire', '3.1.4'
 
 end
